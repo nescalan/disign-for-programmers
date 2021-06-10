@@ -1,9 +1,11 @@
+// Breakpoint variables
 $xs: 360px;
 $s: 440px;
 $m: 768px;
 $l: 1280px;
 $xl: 1440px;
 
+// Mxin para manejar distintos breakpoints
 @mixin for-size($size) {
   @if $size == xs {
     @media (max-width: $s) {
@@ -24,6 +26,7 @@ $xl: 1440px;
   }
 }
 
+// Configuración de las Columnas
 :root {
   --columns: 4;
   --column-gap: 6.67%;
@@ -39,6 +42,7 @@ $xl: 1440px;
   }
 }
 
+//
 .grid {
   margin: 0 16px;
 
